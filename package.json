@@ -1,0 +1,27 @@
+{
+  "name": "node006",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QFults/node006.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QFults/node006/issues"
+  },
+  "homepage": "https://github.com/QFults/node006#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.4.0"
+  }
+}
