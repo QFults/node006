@@ -20,7 +20,9 @@
     "url": "https://github.com/QFults/node006/issues"
   },
   "homepage": "https://github.com/QFults/node006#readme",
-  "dependencies": {},
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  },
   "devDependencies": {
     "jest": "^26.4.0"
   }
