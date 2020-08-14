@@ -1,4 +1,8 @@
 const { prompt } = require('inquirer')
+const fs = require('fs')
+const path = require('path')
+
+const render = require('./lib/render.js')
 
 const Product = require('./lib/Product.js')
 const Food = require('./lib/Food.js')
@@ -59,7 +63,8 @@ const subMenu = () => {
           mainMenu()
           break
         case 'Finish':
-          console.log(products)
+          const html = render(products)
+          fs.writeFileSync(path.join(__dirname, 'output', 'index.html'), html)
           break
       }
     })
