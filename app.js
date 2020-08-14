@@ -29,7 +29,7 @@ const buildFood = product => {
 const buildBeverage = product => {
   prompt([
     {
-      type: 'input',
+      type: 'number',
       name: 'fluidOZ',
       message: 'Enter product fluid oz:'
     },
@@ -80,12 +80,12 @@ const mainMenu = () => {
       message: 'Enter the product name:'
     },
     {
-      type: 'input',
+      type: 'number',
       name: 'quantity',
       message: 'Enter quantity of product:'
     },
     {
-      type: 'input',
+      type: 'number',
       name: 'price',
       message: 'Enter product price:'
     }
@@ -106,3 +106,5 @@ const mainMenu = () => {
     })
     .catch(err => console.log(err))
 }
+
+mainMenu()
